@@ -1,0 +1,12 @@
+Taxonomy Files (updated 10/26/19, Charles Chiu)
+
+***************************************************************************************************************************************
+
+main directory: $reference_folder/surpirt (default /reference/surpirt)
+
+subdirectories and databases
+
+taxonomy databases in $taxonomy_folder (default /reference/surpirt/taxonomy)
+	 nucl_all_sorted_LCall_2019-01-20.txt (can be generated from https://github.com/zyxue/ncbitax2lin, accessed Oct 2019)
+	 lineages-2019-01-20.csv 
+

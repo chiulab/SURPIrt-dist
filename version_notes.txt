@@ -1,0 +1,100 @@
+#
+# 0.7.0 summary of changes (12/11/17, CC)
+#  - corrected bug in script with not retrieving GenBank accession number versions (12/11/17)
+#  - modified "taxonomy_annotation.sh" to pass reference folder parameter
+#  - modified "classify_annotated.py" to accept original annotated SAM files as input
+#
+# 0.7.1 (12/29/17, CC)
+#  - fixed bug in accession numbers when there is a large number of bacterial hits
+#  - modified parsing for taxonomically classified reads
+#
+# 0.7.2 (12/29/17, CC)
+#  - modified taxonomic classification to occur across all major microbial taxa (bacteria, viruses, fungi, and parasites)
+#
+# 0.7.3 (12/30/17, CC)
+#  - rewrote program to remove overlapping reads ("parse_overlapping.py")
+#  - incorporated changes to "filterOverlapSAM.sh" script
+#
+# 0.7.4 (1/4/18, CC)
+#  - modified program to handle brackets in species and genus taxonomic names (e.g. tax_species--B[Candida] glabrata
+#  - changed filtering for human reads in eukaryotic (fungal/parasitic) hits to use "very-sensitive-local" instead of "local" for Bowtie2
+#  - added filtering of individual eukaryotic reads for human sequences using Bowtie2 and BLAST
+#  - fixed bug in bacterial BLAST/annotation/classification
+#  - fixed bug in classifier Python program ("classify_annotated.py") and in multiple-core BLAST script ("blast_ncores.sh")
+#  - remade virus SNAP and Bowtie2 libraries (accession numbers for 4 phages did not have version)
+#
+# 0.7.5 (1/11/18, CC)
+#  - modified program to enable recovery of full-length read
+#  - moved "mask primers" to immediately after taxonomic classificatoin
+#  - added a "trim primers" step to the .annotated results
+#  - demultiplexing of barcodes now puts barcodes in standard header format (e.g. with a "#" sign prior to the barcode)
+#
+# 0.7.6 (1/20/18, CC)
+#  - modified program to output separate nonviral and viral SAM files as input into SURPIviz
+#
+# 0.7.7 (1/28/18, CC)
+#  - modified "blast_ncores.sh" to remove masking by megablast/blast
+#  - modified "taxonomy_annotation.sh" and "surpiRT.sh" to allow protein annotation as an option
+#
+# 0.7.8 (1/29/18, CC)
+#  - fixed bug in awk command to pull out nonviral reads from list of hits
+#
+# 0.7.9 (2/23/18, CC)
+#  - modified filterOverlapSAM.sh to use bowtie2 instead of megablast to look for read overlaps
+#  - added cutadapt to trim primers
+#
+# 0.7.10 (2/28/18, CC)
+#  - modified filterOverlapSAM.sh to go back to using megablast and to only run one species at a time
+#
+# 0.7.11 (3/4/18, CC)
+#  - added option to run RNA only
+#  - RNA = RNA viruses only; DNA = viruses, bacteria, fungi, parasites
+#
+# 0.7.12 (3/8/18, CC)
+#  - added BOWTIE2 human host subtraction from individual viral reads
+#  - removed cutadapt since it was not sensitive enough
+#  - wrote a new program called "mask_primers.py" to mask primers
+#
+# 0.7.13 (4/8/18, CC)
+#  - added option to set threshold alignment score (default = 100) in BLASTn to filter bacterial, fungal, parasitic hits
+#  - noted that some weak aligning hits to Taenia and Toxoplasma were present
+#
+# 0.7.14 (4/18/18, CC)
+#  - fixed typo in bt2_alignmentscore_cutoff variasble
+#
+# 0.7.15 (5/1/18, CC)
+#  - corrected bug in fungal/parasite classification
+#
+# 0.7.16 (5/5/18, SMF)
+#  - corrected bug introduced in 0.7.15
+#
+# 0.7.17 (5/5/18, CC)
+#  - clarified "virus" parameter in SURPIrt
+#  - removed DUST (not needed) and added the mask/trim primers procedure to the beginning of the processing script
+#
+# 0.7.18 (5/9/18, CC)
+#  - put DUST back into the script
+#
+# 0.7.19 (5/10/18, CC)
+#  - changed to Bowtie2 for ribosomal RNA subtraction; for "virus only" analyses, removed cleaning of bacterial hits
+#
+# 0.7.20 (9/27/18, CC)
+#  - changed viral database to include all complete genomes and sequences in GenBank NT
+#  - added check for BLASTn version
+#
+# 0.7.20 (7/17/18, SMF)
+#  - lots of background improvements.
+#	 database verification
+#
+# 0.7.21 (7/17/18, SMF)
+#  - database update
+#
+# 0.7.22 (7/26/18, SMF)
+#  - rolled back database update of 0.7.21. Plan to convert databases to be runtime config parameters in a future version.
+#
+# 0.7.28 (1/22/19, CC)
+#  - fixed bug in assignment of num_cores to threads parameter (1/21/2019, CC)
+#  - moved surpitools into SURPIrt directory
+#  - updated bacterial databases and lineage/taxonomy to January 2019
+#  - updated bacterial databases to pick up 2,601 unique species as of January 2019 without pathogen filtering
+#  - modified taxonomy_annotation.sh to add taxid_db and lineage_db databases as parameters to avoid manually editing this script in the future

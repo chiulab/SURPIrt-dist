@@ -1,0 +1,69 @@
+SURPIrt Reference Files (updated 10/26/19, Charles Chiu)
+
+**************************************************************************************************************************************************
+
+Directory Structure:
+
+main directory: $reference_folder/surpirt (default /reference/surpirt)
+
+subdirectories and databases (header file with GenBank fasta gi/accession numbers in brackets)
+
+bowtie2 databases in $reference_folder/surpirt/bowtie2
+	viruses_acc_NCBInt-genomes-9-14-17+4phages_bt2			[viruses_acc_NCBInt-genomes-9-14-17+4phages.fasta]
+	LSU-SSU_reference_bt2						[LSU-SSU-reference.fasta.headers*]
+	bacterial_refseq_noplasmid_1-20-19_uniqspecies_acc_bt2		[bacterial_refseq_noplasmid_1-20-19_uniqspecies_acc.fasta.headers*]
+	hg38+primate_noHIV.0_bt2					[hg38+primate_noHIV.fasta.headers*]
+	hg38+primate_noHIV.1_bt2					[hg38+primate_noHIV.fasta.headers*]
+	hg38+primate_noHIV.2_bt2					[hg38+primate_noHIV.fasta.headers*]
+	hg38+primate_noHIV.3_bt2					[hg38+primate_noHIV.fasta.headers*]
+
+snap databases in $reference_folder/surpirt/snap
+     	snap_bacterial_refseq_noplasmid_1-20-19_uniqspecies_acc_s16_1	[bacterial_refseq_noplasmid_1-20-19_uniqspecies_acc_0.fasta.headers]
+	snap_bacterial_refseq_noplasmid_1-20-19_uniqspecies_acc_s16_2	[bacterial_refseq_noplasmid_1-20-19_uniqspecies_acc_1.fasta.headers]
+	snap_bacterial_refseq_noplasmid_1-20-19_uniqspecies_acc_s16_3	[bacterial_refseq_noplasmid_1-20-19_uniqspecies_acc_2.fasta.headers]
+	snap_fungal_pathogens_082917_mod+refseq_s20			[fungal_pathogens_082917_mod+refseq.fasta.headers*]
+	snap_parasitic_pathogens_082917_mod1				[parasitic_pathogens_082917_mod1.fasta.headers*]
+	snap_parasitic_pathogens_082917_mod2				[parasitic_pathogens_082917_mod2.fasta.headers*]
+	snap_parasitic_pathogens_082917_mod3				[parasitic_pathogens_082917_mod3.fasta.headers*]
+	snap_protozoa_refseq_s20					[protozoa_refseq_091517.fasta.headers*]
+	
+blast databases in $reference_folder/surpirt/blast
+      saccharomyces.fasta                                       [saccharomyces.fasta.headers]
+      hg38+primate_noHIV.fasta                                  [hg38+primate_noHIV.fasta.headers]
+      fungal_pathogens_082917_mod+refseq.fasta                  [fungal_pathogens_082917_mod+refseq.fasta.headers*]
+      parasitic_pathogens_082917_mod1.fasta			[parasitic_pathogens_082917_mod1.fasta.headers*]
+      parasitic_pathogens_082917_mod2.fasta                     [parasitic_pathogens_082917_mod2.fasta.headers*]
+      parasitic_pathogens_082917_mod3.fasta                     [parasitic_pathogens_082917_mod3.fasta.headers*]
+      protozoa_refseq_091517.fasta                              [protozoa_refseq_091517.fasta.headers]*
+      bacterial_refseq_pathogens_mod.fasta                      [bacterial_refseq_pathogens_mod.fasta.headers]
+      bacterial_refseq_noplasmid_1-20-19_uniqspecies_acc        [bacterial_refseq_noplasmid_1-20-19_uniqspecies_acc.fasta.headers]
+      bacterial_refseq_noplasmid_1-20-19.fasta                  [bacterial_refseq_noplasmid_1-20-19.fasta.headers]
+      bacterial-plasmid-12-18-17.fasta                          [bacterial-plasmid-12-18-17.fasta.headers]
+      human_rRNA_mito.fasta                                     [human_rRNA_mito.fasta.headers]
+      LSU_SSU_modheader.fasta                                   [LSU_SSU_modheader.fasta.headers*]
+
+*same fasta reference files used for multiple aligners
+
+**************************************************************************************************************************************************
+
+List of all 15 header files containing GenBank fasta gi/accession numbers (in alphabetical order)
+--------------------------------------------------------------------------------------------------
+bacterial-plasmid-12-18-17.fasta.headers
+bacterial_refseq_noplasmid_1-20-19.fasta.headers
+bacterial_refseq_noplasmid_1-20-19_uniqspecies_acc.0.fasta.headers
+bacterial_refseq_noplasmid_1-20-19_uniqspecies_acc.1.fasta.headers
+bacterial_refseq_noplasmid_1-20-19_uniqspecies_acc.2.fasta.headers
+bacterial_refseq_noplasmid_1-20-19_uniqspecies_acc.fasta.headers
+bacterial_refseq_pathogens_mod.fasta.headers
+fungal_pathogens_082917_mod+refseq.fasta.headers
+hg38+primate_noHIV.fasta.headers
+human_rRNA_mito.fasta.headers
+LSU_SSU_modheader.fasta.headers
+parasitic_pathogens_082917_mod1.fasta.headers
+parasitic_pathogens_082917_mod2.fasta.headers
+parasitic_pathogens_082917_mod3.fasta.headers
+protozoa_refseq_091517.fasta.headers
+saccharomyces.fasta.headers
+viruses_acc_NCBInt-genomes-9-14-17+4phages.fasta.headers
+
+
