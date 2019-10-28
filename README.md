@@ -37,10 +37,11 @@
 #### Instructions for Installing and Running the SURPIrt Software
 
 1. The reference databases used by SURPIrt for identification of human, bacterial, fungal, and parasitic reads and for taxonomy lookup are not provided in the Github distribution.  They will need to be regenerated as follows:
-• The reference headers for the fasta reference database are provided in the /reference_headers subdirectory. Note that the reference headers can be in either gi or accession number format and also may include extraneous descriptive text. Use the reference headers to reconstruct the individual fasta files and place them in the directory structure as described in the README file.
-• The subdirectory /taxonomy_files contains the file CSV-formatted file “lineages-2019-01-20.csv”.  Instructions for generating the 2nd taxonomy file “nucl_all_sorted_LCall.txt” are provided in the README file. These files will need to be placed in the $taxonomy_folder (default /reference/surpirt/taxonomy).
 
-2. Once the human/microbial reference and taxonomy lookup databases have been generated and placed in their appropriate directories, the pipeline can be run using the "SURPIrt.sh" script with the following command-line switches:
+	• The reference headers for the fasta reference database are provided in the `/reference_headers` subdirectory. Note that the reference headers can be in either gi or accession number format and also may include extraneous descriptive text. Use the reference headers to reconstruct the individual fasta files and place them in the directory structure as described in the README file.
+	• The subdirectory `/taxonomy_files` contains the file CSV-formatted file `lineages-2019-01-20.csv`.  Instructions for generating the 2nd taxonomy file `nucl_all_sorted_LCall.txt` are provided in the README file. These files will need to be placed in the $taxonomy_folder (default `/reference/surpirt/taxonomy`).
+
+2. Once the human/microbial reference and taxonomy lookup databases have been generated and placed in their appropriate directories, the pipeline can be run using the `SURPIrt.sh` script with the following command-line switches:
 
 ```
 SURPIrt version 0.7.28
@@ -80,8 +81,8 @@ Command Line Switches:
 ```
 
 #### Test Run
-1. A sample test file named “ZIKV-nohuman.fastq” is provided, is a metagenomic run of a ZIKV clinical sample with the human reads removed [n=517 sequences].
+1. A sample test file named `ZIKV-nohuman.fastq` is provided, is a metagenomic run of a ZIKV clinical sample with the human reads removed [n=517 sequences].
 
-2. Using default reference directory of “/reference/surpi”, run the “SURPIrt.sh” script from the command line with the following parameters (using 8 threads/cores):
+2. Using default reference directory of `/reference/surpi`, run the `SURPIrt.sh` script from the command line with the following parameters (using 8 threads/cores):
 
   `SURPIrt.sh -f "ZIKV-nohuman.fastq" -t 8`
