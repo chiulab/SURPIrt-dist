@@ -10,29 +10,29 @@
 
 
 #### Required Scripts
-Linux shell scripts
-	• blast_ncores.sh [OBFUSCATED]
-	• extractAlltoFast.sh [OBFUSCATED]
-	• FastaToTab.csh [OBFUSCATED]
-	• filterOverlapSAM.sh [OBFUSCATED] 
-	• split_barcodes.sh [OBFUSCATED]
-	• SURPIrt.sh [OBFUSCATED]
-	• SURPIrt_viz.sh [OBFUSCATED]
-	• TabToFasta.csh [OBFUSCTED]
-	• taxonomy_annotation.sh [OBFUSCATED]
+	Linux shell scripts
+		• blast_ncores.sh [OBFUSCATED]
+		• extractAlltoFast.sh [OBFUSCATED]
+		• FastaToTab.csh [OBFUSCATED]
+		• filterOverlapSAM.sh [OBFUSCATED] 
+		• split_barcodes.sh [OBFUSCATED]
+		• SURPIrt.sh [OBFUSCATED]
+		• SURPIrt_viz.sh [OBFUSCATED]
+		• TabToFasta.csh [OBFUSCTED]
+		• taxonomy_annotation.sh [OBFUSCATED]
 
-#### Python scripts
-	• classify_annotated.py [BINARIZED]
-	• mask_primers.py [BINARIZED]
-	• parse_overlapping.py [BINARIZED]
-	• trim_primers.py [BINARIZED]
+	Python scripts
+		• classify_annotated.py [BINARIZED]
+		• mask_primers.py [BINARIZED]
+		• parse_overlapping.py [BINARIZED]
+		• trim_primers.py [BINARIZED]
 
-#### Perl scripts
-	• fasta_to_fastq.pl
-	• subtractBlastFromFasta.pl
+	Perl scripts
+		• fasta_to_fastq.pl
+		• subtractBlastFromFasta.pl
 
-#### C/C++ executables
-	• fqextract_5m
+	C/C++ executables
+		• fqextract_5m
 
 #### Instructions for Installing and Running the SURPIrt Software
 
