@@ -39,6 +39,7 @@
 1. The reference databases used by SURPIrt for identification of human, bacterial, fungal, and parasitic reads and for taxonomy lookup are not provided in the Github distribution.  They will need to be regenerated as follows:
 
 	• The reference headers for the fasta reference database are provided in the `/reference_headers` subdirectory. Note that the reference headers can be in either gi or accession number format and also may include extraneous descriptive text. Use the reference headers to reconstruct the individual fasta files and place them in the directory structure as described in the README file.
+	
 	• The subdirectory `/taxonomy_files` contains the file CSV-formatted file `lineages-2019-01-20.csv`.  Instructions for generating the 2nd taxonomy file `nucl_all_sorted_LCall.txt` are provided in the README file. These files will need to be placed in the $taxonomy_folder (default `/reference/surpirt/taxonomy`).
 
 2. Once the human/microbial reference and taxonomy lookup databases have been generated and placed in their appropriate directories, the pipeline can be run using the `SURPIrt.sh` script with the following command-line switches:
