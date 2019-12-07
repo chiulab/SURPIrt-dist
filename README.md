@@ -45,7 +45,7 @@
 2. Once the human/microbial reference and taxonomy lookup databases have been generated and placed in their appropriate directories, the pipeline can be run using the `SURPIrt.sh` script with the following command-line switches:
 
 ```
-SURPIrt version 0.7.28
+SURPIrt version 1.0
 
 This program will run the SURPIrt pipeline.
 
