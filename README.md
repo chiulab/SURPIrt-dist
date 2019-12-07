@@ -1,4 +1,4 @@
-## SURPIrt version 0.7.28
+## SURPIrt version 1.0
 
 #### Hardware & Software Requirements
 
